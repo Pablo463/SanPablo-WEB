@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domingo - Conexión Familiar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>Domingo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#producto">Productos</a></li>
+                <li><a href="#familia">Familia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Sección de Beneficios -->
+    <section id="beneficios">
+        <h2>Beneficios de Domingo</h2>
+        <p>En Domingo, ayudamos a fortalecer las conexiones familiares a pesar de la distancia, brindando recuerdos que perduran.</p>
+    </section>
+
+
+    <!-- Sección de Productos -->
+    <section id="producto">
+        <h2>Pack de Fotos y Regalos</h2>
+        <p>Ofrecemos un pack personalizado de fotos impresas y regalos para que la familia se sienta más cerca.</p>
+        <button>Comprar Ahora</button>
+    </section>
+
+
+    <!-- Sección de Familia -->
+    <section id="familia">
+        <h2>La Importancia de la Familia</h2>
+        <p>La familia es el pilar fundamental de nuestra vida. Domingo existe para ayudar a reforzar estos lazos tan valiosos.</p>
+    </section>
+
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Comunícate con nosotros para más información o dudas.</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+    <!-- Sección del carrito de compras -->
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="contenidoCarrito"></div> <!-- Aquí se mostrarán los productos -->
+        <p id="totalCarrito">Total: $0</p>
+        <button id="vaciarCarrito">Vaciar Carrito</button>
+    </section>
+
+
+    <!-- Sección de Resumen del Pedido -->
+<section id="resumenPedido" style="display: none;">
+    <h2>Resumen del Pedido</h2>
+    <div id="detallePedido"></div>
+    <p id="totalPedido">Total: $0</p>
+    <button id="confirmarCompra">Confirmar Compra</button>
+</section>
+
+
+
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Domingo - Conexión Familiar Profunda</p>
+        <p>Redes Sociales: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+    </footer>
+
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
