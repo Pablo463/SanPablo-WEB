@@ -78,6 +78,50 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Estilos para el botón de hamburguesa */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Estilos para el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Mostrar el botón en pantallas pequeñas */
+    }
+    
+   /* Ocultar el menú inicialmente */
+   #navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #0055ff;
+    position: fixed; /* Cambiamos a 'fixed' para que se posicione respecto a la ventana */
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+    /* Mostrar el menú cuando tenga la clase "show" */
+    #navbar ul.show {
+        display: flex;
+    }
+
+    /* Estilos de enlaces en el menú */
+    #navbar ul li a {
+        color: white;
+        padding: 10px 15px; /* Reducir el padding para hacer el menú más compacto */
+        display: block;
+        text-align: center;
+        font-size: 16px; /* Reducir ligeramente el tamaño de fuente */
+    }
+}
+
 
 /* Estilos para cada sección */
 section {
@@ -98,6 +142,93 @@ section p {
     margin-bottom: 20px;
 }
 
+/* Centrar los títulos */
+section h2 {
+    text-align: center;
+}
+
+/* Hacer que el video e imagen cubran toda la página a lo ancho */
+.video-container, .image-container {
+    margin-top: 20px;
+    text-align: center;
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    margin-left: calc(50% - 50vw); /* Centrar y ajustar el margen */
+}
+
+.video-container video, .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilos para el carrusel de productos */
+#productos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.productos-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+}
+
+.productos-scroll .row {
+    display: flex;
+    gap: 20px;
+}
+
+.producto-item {
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.producto-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto-item h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.producto-item p {
+    color: #333;
+}
+
+.producto-item button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #0055ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto-item button:hover {
+    background-color: #0044cc;
+}
+
+/* Estilos del scrollbar */
+.productos-scroll::-webkit-scrollbar {
+    height: 10px;
+}
+
+.productos-scroll::-webkit-scrollbar-thumb {
+    background-color: #0055ff;
+    border-radius: 5px;
+}
 
 /* Estilos del formulario de contacto */
 form {
@@ -164,4 +295,55 @@ footer a {
     }
 }
 
+/* Contenedor Flex para dividir la sección en dos */
+.contenedor-flex {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.recomendados, .mensaje {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilos específicos para productos recomendados */
+.recomendados h3, .mensaje h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.recomendados p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos para cada producto recomendado */
+.producto-recomendado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.producto-recomendado button {
+    padding: 8px 12px;
+    background-color: #0055ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.producto-recomendado button:hover {
+    background-color: #0044cc;
+}
 

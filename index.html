@@ -12,38 +12,54 @@
         <div class="logo">
             <h1>Domingo</h1>
         </div>
-        <nav>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button> <!-- Botón de hamburguesa -->
+        <nav id="navbar">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#beneficios">Beneficios</a></li>
                 <li><a href="#producto">Productos</a></li>
                 <li><a href="#familia">Familia</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
             </ul>
         </nav>
     </header>
+    
 
+   <!-- Sección de Beneficios -->
+<section id="beneficios">
+    <h2>Beneficios de Domingo</h2>
+    <p>En Domingo, ayudamos a fortalecer las conexiones familiares a pesar de la distancia, brindando recuerdos que perduran.</p>
+    
+    <!-- Video sobre los beneficios de Domingo -->
+    <div class="video-container">
+        <video controls width="100%">
+            <source src="video-beneficios.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </div>
+</section>
 
-    <!-- Sección de Beneficios -->
-    <section id="beneficios">
-        <h2>Beneficios de Domingo</h2>
-        <p>En Domingo, ayudamos a fortalecer las conexiones familiares a pesar de la distancia, brindando recuerdos que perduran.</p>
-    </section>
-
-
-    <!-- Sección de Productos -->
-    <section id="producto">
-        <h2>Pack de Fotos y Regalos</h2>
-        <p>Ofrecemos un pack personalizado de fotos impresas y regalos para que la familia se sienta más cerca.</p>
-        <button>Comprar Ahora</button>
-    </section>
-
+    <!-- Sección de Productos en la Página Principal -->
+<section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos-scroll">
+        <div class="row flex-nowrap" id="listaProductos">
+            <!-- Aquí se añadirán los productos dinámicamente -->
+        </div>
+    </div>
+</section>
 
     <!-- Sección de Familia -->
-    <section id="familia">
-        <h2>La Importancia de la Familia</h2>
-        <p>La familia es el pilar fundamental de nuestra vida. Domingo existe para ayudar a reforzar estos lazos tan valiosos.</p>
-    </section>
+<section id="familia">
+    <h2>La Importancia de la Familia</h2>
+    <p>La familia es el pilar fundamental de nuestra vida. Domingo existe para ayudar a reforzar estos lazos tan valiosos.</p>
+
+    <!-- Imagen sobre la importancia de la familia -->
+    <div class="image-container">
+        <img src="familia.jpg" alt="Familia reunida" width="100%">
+    </div>
+</section>
 
 
     <!-- Sección de Contacto -->
@@ -61,37 +77,13 @@
         </form>
     </section>
 
-
-    <!-- Sección del carrito de compras -->
-    <section id="carrito">
-        <h2>Carrito de Compras</h2>
-        <div id="contenidoCarrito"></div> <!-- Aquí se mostrarán los productos -->
-        <p id="totalCarrito">Total: $0</p>
-        <button id="vaciarCarrito">Vaciar Carrito</button>
-    </section>
-
-
-    <!-- Sección de Resumen del Pedido -->
-<section id="resumenPedido" style="display: none;">
-    <h2>Resumen del Pedido</h2>
-    <div id="detallePedido"></div>
-    <p id="totalPedido">Total: $0</p>
-    <button id="confirmarCompra">Confirmar Compra</button>
-</section>
-
-
-
-
     <!-- Pie de Página -->
     <footer>
         <p>&copy; 2024 Domingo - Conexión Familiar Profunda</p>
         <p>Redes Sociales: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
     </footer>
 
-
     <!-- Enlace al archivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
-
-
