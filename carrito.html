@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>San Pablo — Carrito</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">SP</span><span class="brand-name">San Pablo</span></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="tienda.html">TIENDA</a></li>
+          <li><a href="carrito.html" class="active">CARRITO (<span id="nav-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <header class="section-header">
+      <h1>Carrito</h1>
+      <p>Revisá tus productos, ajustá cantidades o finalizá la compra (simulada).</p>
+    </header>
+
+    <section class="card cart">
+      <div id="cart-rows" class="cart-grid"></div>
+      <div class="cart-summary">
+        <div class="totals"><strong>Total:</strong> <span id="cart-total">ARS $ 0</span></div>
+        <div class="actions">
+          <button class="btn" id="cart-clear">Vaciar</button>
+          <button class="btn primary" id="cart-checkout">Finalizar compra</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot"><div class="copy">© <span id="year"></span> San Pablo</div></div>
+  </footer>
+
+  <script src="./js/site.js"></script>
+</body>
+</html>

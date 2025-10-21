@@ -1,0 +1,54 @@
+:root{
+  --bg:#0b1226; --panel:#0e1530; --ink:#e6edf6; --muted:#9fb0cc;
+  --brand:#60a5fa; --brand-600:#2563eb; --line:rgba(159,176,204,.2);
+  --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1150px,92%);margin-inline:auto}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(11,18,38,.7);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:64px}
+.menu{display:flex;gap:.8rem;list-style:none;margin:0;padding:0}
+.menu a{padding:.55rem 1rem;border-radius:999px;color:var(--muted)}
+.menu a.active,.menu a:hover{background:rgba(96,165,250,.15);color:var(--ink)}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800}
+.brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-600));color:white}
+.hero{position:relative;min-height:68vh;display:grid;place-items:center;background:url('./img/portada.jpg') center/cover no-repeat;border-bottom:1px solid var(--line)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5),rgba(11,18,38,.9));z-index:0}
+.hero-content{position:relative;z-index:1;text-align:center}
+.hero-content h1{font-size:clamp(2rem,5vw,4rem);margin:0 0 .4rem}
+.hero-content h1 span{background:linear-gradient(135deg,var(--brand),var(--brand-600));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-content p{color:var(--muted);margin:0 0 1rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.7rem 1.1rem;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-600));border:none;color:white;box-shadow:var(--shadow)}
+.section{padding:2.2rem 0}
+.cards-3{display:grid;gap:1rem;grid-template-columns:1fr}
+.card{background:linear-gradient(180deg,var(--panel),#0b1226);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.card img{height:250px;width:100%;object-fit:cover}
+.alt{background:#0a1024;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.quotes{display:grid;gap:1rem}
+.quotes blockquote{margin:0;padding:1rem;border:1px solid var(--line);border-radius:14px;background:rgba(96,165,250,.06)}
+.quotes cite{display:block;margin-top:.4rem;color:var(--muted)}
+/* tabla estilos */
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:.8rem;border-bottom:1px solid var(--line);text-align:left}
+.table img{width:64px;height:64px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.table-wrap{width:100%;overflow:auto}
+/* carrito en tarjetas */
+.cart-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-bottom:1rem}
+.cart-card{display:grid;grid-template-columns:96px 1fr auto;gap:1rem;align-items:center;
+  padding:1rem;border:1px solid var(--line);border-radius:16px;
+  background:linear-gradient(180deg,var(--panel),#0b1226);box-shadow:var(--shadow)}
+.cart-card .thumb{width:96px;height:96px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+.cart-card .title{font-weight:700;margin:0 0 .25rem}
+.cart-card .meta{color:var(--muted);margin:0}
+.cart-card .side{display:grid;gap:.4rem;justify-items:end}
+.cart-card .qty-controls{display:flex;align-items:center;gap:.5rem}
+.cart-card .qty-controls .badge{display:inline-block;padding:.2rem .6rem;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.footer{border-top:1px solid var(--line);background:#0b1226}
+.foot{display:flex;justify-content:space-between;align-items:center;min-height:68px}
+@media (min-width:720px){.cards-3{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:760px){.cart-grid{grid-template-columns:1fr 1fr}}
