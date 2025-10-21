@@ -35,16 +35,17 @@ function cartRemove(productId){ var cart = cartAll().filter(function(it){ return
 function seedIfEmpty(){
   if (storeAll().length === 0){
     var samples = [
-      { id: makeId(), name:'Slip Clásico Blanco',    price:6999, size:'M',  color:'Blanco', image:'./img/products/slip-blanco.jpg' },
-      { id: makeId(), name:'Slip Clásico Negro',     price:6999, size:'L',  color:'Negro',  image:'./img/products/slip-negro.jpg' },
-      { id: makeId(), name:'Slip Clásico Petróleo',  price:7299, size:'M',  color:'Petróleo', image:'./img/products/slip-petroleo.jpg' },
-      { id: makeId(), name:'Boxer Algodón Gris',     price:9499, size:'L',  color:'Gris',   image:'./img/products/boxer-gris.jpg' },
-      { id: makeId(), name:'Boxer Deportivo (detalle)', price:9999, size:'M', color:'Negro', image:'./img/products/boxer-deportivo-detalle.jpg' },
-      { id: makeId(), name:'Boxer Deportivo Negro',  price:10499, size:'XL', color:'Negro', image:'./img/products/boxer-deportivo-negro.jpg' }
+      { id: makeId(), name:'Slip Clásico Blanco',    price:6999, size:'M',  color:'Blanco', image:'slip-blanco.jpg' },
+      { id: makeId(), name:'Slip Clásico Negro',     price:6999, size:'L',  color:'Negro',  image:'slip-negro.jpg' },
+      { id: makeId(), name:'Slip Clásico Petróleo',  price:7299, size:'M',  color:'Petróleo', image:'slip-petroleo.jpg' },
+      { id: makeId(), name:'Boxer Algodón Gris',     price:9499, size:'L',  color:'Gris',   image:'boxer-gris.jpg' },
+      { id: makeId(), name:'Boxer Deportivo (detalle)', price:9999, size:'M', color:'Negro', image:'boxer-deportivo-detalle.jpg' },
+      { id: makeId(), name:'Boxer Deportivo Negro',  price:10499, size:'XL', color:'Negro', image:'boxer-deportivo-negro.jpg' }
     ];
     storeSave(samples);
   }
 }
+
 
 // === Render tabla en Tienda ===
 function renderRows(filter){
