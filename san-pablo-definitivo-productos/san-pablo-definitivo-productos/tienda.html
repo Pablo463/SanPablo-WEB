@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>San Pablo — Tienda</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">SP</span><span class="brand-name">San Pablo</span></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="tienda.html" class="active">TIENDA</a></li>
+          <li><a href="carrito.html">CARRITO (<span id="nav-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <header class="section-header">
+      <h1>Tienda</h1>
+      <p>Filtrá por <strong>nombre</strong> y agregá con “＋”.</p>
+      <div class="search-wrap"><input id="search" placeholder="Buscar por nombre…" /></div>
+    </header>
+
+    <section class="card" style="padding:0">
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Talle</th>
+              <th>Color</th>
+              <th>Agregar</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot"><div class="copy">© <span id="year"></span> San Pablo</div></div>
+  </footer>
+
+  <script src="./js/site.js"></script>
+</body>
+</html>
