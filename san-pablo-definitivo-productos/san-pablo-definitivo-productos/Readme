@@ -1,0 +1,32 @@
+# 🩲 San Pablo — Calzoncillos que duran
+
+**San Pablo** es una marca ficticia creada como proyecto final de la materia **Programación Web (71.38 – ITBA)**.  
+El objetivo es desarrollar un sitio funcional, visualmente atractivo y construido solo con las herramientas vistas en clase: **HTML, CSS y JavaScript puro**, sin frameworks externos.
+
+---
+
+## 🌟 Descripción
+
+El sitio web presenta una **marca de ropa interior masculina** enfocada en la **durabilidad, calidad y diseño clásico sin estampados**.  
+Los usuarios pueden:
+
+- Navegar por la página principal y conocer la línea de productos.  
+- Ver un catálogo filtrable con distintos modelos.  
+- Agregar productos a un **carrito funcional**.  
+- Ajustar cantidades, eliminar artículos o simular una compra.  
+
+Todo el contenido (productos, imágenes y carrito) se gestiona **desde el navegador usando LocalStorage**.
+
+---
+
+## 🧰 Tecnologías utilizadas
+
+- **HTML5** — estructura semántica del sitio.  
+- **CSS3** — estilos propios, diseño responsivo y uso de variables CSS.  
+- **JavaScript (ES6)** — manejo del DOM, almacenamiento en LocalStorage y lógica del carrito.  
+- **Git / GitHub Pages** — control de versiones y publicación en línea.
+
+---
+
+## 🗂️ Estructura del proyecto
+
